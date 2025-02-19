@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HostServiceManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="HostServiceManager" Height="450" Width="800">
     <Grid>
-
+        <TabControl>
+            <TabItem Header="主頁" HorizontalAlignment="Left" Margin="-2,-2,0,0" Width="40">
+                <Grid Width="800" Height="410">
+                </Grid>
+            </TabItem>
+            <TabItem Header="設定">
+                <Grid Width="800" Height="410">
+                    <Label Content="基本設定" Margin="10,10,704,375" Height="23" Width="80"/>
+                    <TextBox TextWrapping="Wrap" Text="請選擇路徑" Margin="15,33,629,357" Width="150"/>
+                    <Button Content="瀏覽" Margin="170,33,564,357" Click="Button_Click" Width="60"/>
+                    <Label Content="其他設定" Margin="10,80,704,305" Width="80" Height="23"/>
+                    <CheckBox Content="是否強制停止" Margin="15,103,669,287" Width="110"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
